@@ -2,7 +2,7 @@ An project template for creating a web project using Flask, React, and SQL Alche
 
 Built from the [flask_angular_template](https://github.com/surgeforward/flask_angular_template) but using React and Browserify instead of Angular.
 
-This template requires node for compiling assets. I use [invoker](http://invoker.codemancers.com/) to start all processes at once for development.
+This template requires node for compiling assets. It uses gulp. I use [invoker](http://invoker.codemancers.com/) to start all processes at once for development.
 
 The db commands for interacting with alembic are modified commands from [Flask-Migrate](https://github.com/miguelgrinberg/Flask-Migrate) updated to work with Click
 
@@ -44,7 +44,10 @@ The db commands for interacting with alembic are modified commands from [Flask-M
     $ celery -A project.tasks worker
 
 
+You can also use invoker for steps 6 through 8. This will start the flask server and run gulp. 
+The default task includes a watch task to update the assets wihen they change.
 
+    $ invoker start invoker.ini
 
 
 #### Management Commands
