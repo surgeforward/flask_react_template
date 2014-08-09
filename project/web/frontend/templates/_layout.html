@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel=stylesheet type=text/css href="/static/dist/css/app.min.css">
+    {% block css %}{% endblock %}
+</head>
+<body>
+
+        <div class="container">
+            {% block body %}{% endblock %}
+        </div>
+    <script src="/static/dist/js/app.min.js"></script>
+    {% block js %}{% endblock %}
+</body>
+</html>
